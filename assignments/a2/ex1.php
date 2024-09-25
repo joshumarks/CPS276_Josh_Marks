@@ -1,5 +1,13 @@
 <?php  
-    $output = "Hello World!";
+$names = ["Scott","Karen","Mike","Judy"];
+
+$output = "<ul>";
+
+foreach ($names as $name) {
+  $output .= "<li>{$name}</li>";
+}
+$output .= "</ul>";
+
 ?>
 
 <!doctype html>

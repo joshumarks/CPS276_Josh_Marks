@@ -1,24 +1,3 @@
-<?php  
-$list1 = [1,2,3,4];
-$list2 = [1,2,3,4,5];
-
-$output = "<ul>";
-
-foreach ($list1 as $i)
-{
-  $output .= "<li>{$i}</li>";
-  $output .= "<ul>";
-  foreach($list2 as $j)
-  {
-    $output .= "<li>{$j}</li>";
-  }
-  $output .= "</ul>";
-
-}
-$output .= "</ul>";
-
-?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -31,7 +10,7 @@ $output .= "</ul>";
   </head>
   <body>
     <main class="container">
-      <?php echo $output; ?>
+        <h1>Test</h1>
     </main>
   </body>
 </html>

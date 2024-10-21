@@ -18,27 +18,25 @@ if(count($_POST) > 0){
   </head>
   <body class="container">
     <div class = "container">
-    <form action="Main.php" method="POST">
-       <h1>Add names</h1>
-
-        <div class="col-12">
-            <button type="submit" name="add" class="btn btn-primary">Add Name</button>
-            <button type="submit" name="clear" class="btn btn-primary">Clear Names</button>
-        </div></br>
+    <form action="MakeDir.php" method="POST">
+       <h1>File and Directory Assignment</h1>
 
         <div class="col-12">
             <!--Name Input-->
-            <label for="nameField" class="form-label">Enter Name</label>
+            <label for="nameField" class="form-label">Folder Name</label>
             <input type="type" class="form-control" id="nameField">
         </div><br>
 
         <div class="col-12">
             <!--Name Input-->
-            <label for="nameList" class="form-label">List of Names</label></br>
-            <textarea style="height: 500px;" class="form-control" id="namelist" name="namelist"><?php echo $output ?></textarea>
+            <label for="nameList" class="form-label">File Content</label></br>
+            <textarea style="height: 300px;" class="form-control" id="namelist" name="namelist"></textarea>
 
         </div><br>
 
+        <div class="col-12">
+            <button type="submit" name="add" class="btn btn-primary">Submit</button>
+        </div>
       </form>
     </div>
   </body>

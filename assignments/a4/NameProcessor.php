@@ -1,12 +1,12 @@
 <?php
 
-public class Name_Processor
+class Name_Processor
 {
     private $name_str;
 
     function addClearNames()
     {
-        echo $_POST["nameField"]
+        echo $_POST["nameField"];
     }
 }
 

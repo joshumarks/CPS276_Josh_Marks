@@ -1,3 +1,16 @@
+<?php
+
+// $output;
+
+if(isset($_POST['submitButton']))
+{
+   $output.= "</br>" . $_POST['fileIn'];
+}
+
+?>
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,5 +28,6 @@
       <h1>List Files</h1>
       <a href= "http://russet-v8.wccnet.edu/~jtmarks/CPS_Josh_Marks/assignments/a7/Form.php">Add File</a>
 
+      <?php echo $output?>
 
     </main>

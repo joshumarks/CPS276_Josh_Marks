@@ -15,19 +15,21 @@
       <h1>File upload</h1>
       <a href= "http://russet-v8.wccnet.edu/~jtmarks/CPS_Josh_Marks/assignments/a7/fileUploadProc.php">Show File List</a>
       <!-- Add Hyperlink (possibly anchor element) to fileUploadProc.php file with file list -->
-      <form action="php/display_data_1.php" method="post">
+      <form action="fileUploadProc.php" method="post">
      <!-- File Name Input -->
       <div class="form-group">
         <label for="fileName">File Name</label>
         <input type="text" class="form-control" name="fileName" id="fileName">
       </div>
       
+      <!-- File Input -->
       <div class="form-group">
         <input type="file" name="fileIn" size="30">
       </div>
       
+      <!-- Button -->
       <div class="form-group">
-        <input type="submit" class="btn btn-success" name="submitButton" id="submitButton" value="Upload File" />
+        <input type="submit" class="btn btn-success" name="submitButton" id="submitButton" value="Upload File">
       </div>
       </form>
     </main>
